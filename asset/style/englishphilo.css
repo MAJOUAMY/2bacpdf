@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url(style.css);
+.containerr{
+    display: grid;
+    margin-top: 70px;
+    padding: 50px 100px;
+    height: 500px;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 2rem;
+    
+}
+.containerr a{
+    padding: 100px;
+    margin: auto;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.249);
+    color: darkgreen;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: capitalize;
+    transition: .3s ease;
+}
+.containerr a:hover{
+    transform: scale(1.03);
+}
+
+
+@media (max-width:800px){
+    .containerr{
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 3rem;
+    }
+}
+@media (max-width:1000px) and (min-width:800px){
+    .containerr{
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 3rem;
+    }
+}
+@media (max-width:500px){
+    .containerr{
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 3rem;
+        padding: 50px 10px;
+    }
+}
+@media (max-width:400px){
+    .containerr{
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 3rem;
+        padding: 50px 10px;
+    }
+    .containerr a{
+        padding: 50px;
+    }
+    
+}

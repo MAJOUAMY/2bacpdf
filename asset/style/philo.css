@@ -1,0 +1,28 @@
+@import url(style.css);
+.part h1{
+    direction: rtl;
+  }
+.download{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+.download h3::before{
+  content: ":";
+}
+
+.action{
+  display: flex;
+  flex-direction: row-reverse;
+}
+@media (max-width:600px){
+    .download{
+      flex-direction: column;
+    }
+    h1{
+        text-align: center;
+    }
+    .action{
+      display: flex;
+      flex-direction: column;
+    }
+  }

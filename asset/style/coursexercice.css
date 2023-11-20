@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url(style.css);
+
+.coursexercicecontainer{
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+   
+    
+    
+}
+.part{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 400px;
+    margin-top:40px;
+}
+.part h1{
+    text-transform: capitalize;
+    color: black;
+}
+.download{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 1.3rem;
+    padding: 10px 0px;
+    border-bottom: 1px dotted #ccc;
+}
+.download a{
+    background-color: darkgreen;
+    color: white;
+    padding: 10px 14px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 4px;
+    transition: .3s all;
+}
+.download a:hover{
+       transform: translateY(-2px);
+       box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.178);
+}
+.download h3{
+    text-transform: capitalize;
+    color: #aaa;
+}
+
+@media (max-width:450px){
+    .download{
+        display: flex;
+        flex-direction: column;
+    }
+    .part h1{
+        text-align: center;
+    }
+    .part{
+        width: 100%;
+    }
+}
